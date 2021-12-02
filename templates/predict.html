@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html>
+<head> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+    <!--<link href="style.css" rel="stylesheet" type="text/css">-->
+</head>
+
+<body style="background-color: black; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0; 
+text-align: center; width: 700px; height: 200px;">
+    
+    <h1 class="prediction-line">
+        {{ result }}
+    </h1>
+
+    <a href="{{ url_for('main_page') }}" style="text-decoration: none;">
+        <button class="return">
+            <span class="button-text">
+                Another Image?
+            </span>
+        </button>
+    </a>
+</body>
+
+</html>
