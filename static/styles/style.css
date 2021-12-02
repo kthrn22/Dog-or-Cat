@@ -1,0 +1,91 @@
+.head-line {
+  font-weight: bold;
+  font-family: Georgia, serif;
+  margin-bottom: 16px;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 700;
+  color: white;
+}
+
+.button-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.browse-file {
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  height: 36px;
+  padding: 0px 24px 0px 16px;
+  transition: all 0.3s ease 0s;
+  white-space: nowrap;
+  width: fit-content;
+  color: -internal-light-dark(black, white);
+  margin-right: 15px;
+  margin-top: 30px;
+}
+
+.browse-file span{
+  color: black;
+  padding-left: 10px;
+}
+
+.predict {
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid white;
+  cursor: pointer;
+  display: inline-flex;
+  height: 36px;
+  padding: 0px 24px;
+  transition: all 0.3s ease 0s;
+  white-space: nowrap;
+  width: fit-content;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+
+.predict span{
+  color: white;
+}
+
+.return {
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  height: 36px;
+  padding: 0px 24px 0px 16px;
+  transition: all 0.3s ease 0s;
+  white-space: nowrap;
+  width: fit-content;
+  color: -internal-light-dark(black, white);
+  margin-top: 30px;
+}
+
+.return span {
+  color: black;
+  padding-left: 10px;
+}
+
+.prediction-line {
+  font-weight: bold;
+  font-family: Georgia, serif;
+  margin-bottom: 16px;
+  font-size: 50px;
+  line-height: 44px;
+  font-weight: 700;
+  color: white;
+}
