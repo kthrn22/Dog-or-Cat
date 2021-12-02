@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+    <!--<link href="style.css" rel="stylesheet" type="text/css">-->
+</head>
+
+<body style="position:absolute; margin:auto; width:700px; height:200px; text-align:center; top: 0; 
+            bottom: 0; left: 0; right: 0; background-color: black;">
+    <h1 class="head-line"> 
+        Upload an image of a cat or a dog 
+    </h1>
+    <form method=post enctype=multipart/form-data>
+        <input type="file" name="file" id="real-browse-file" hidden/>
+        <button type="button" class="browse-file" id="custom-browse-file">
+            <span class="button-text">
+                Browse File
+            </span>
+        </button>
+        
+        <script type="text/javascript">
+            const realFileBtn = document.getElementById("real-browse-file");
+            const customBtn = document.getElementById("custom-browse-file");
+        
+            customBtn.addEventListener("click", function() {
+                realFileBtn.click();
+            });
+        </script>
+        
+        <input type="submit" value="Upload" id="real-upload" hidden/>
+        <button type="button" class="predict" id="custom-upload">
+            <span class="button-text">
+                Predict
+            </span>
+        </button>
+        
+        <script type="text/javascript">
+            const realUpload = document.getElementById("real-upload");
+            const customUpload = document.getElementById("custom-upload");
+        
+            customUpload.addEventListener("click", function() {
+                realUpload.click();
+            });
+        </script>
+    </form>    
+</body>
+
+</html>
